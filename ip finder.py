@@ -6,7 +6,7 @@ for i in range(0,11):
     try:
         x = socket.gethostbyaddr(IP)
         t = list(x[0],x[2][0])
-        with open(r'C:\Users\harshvardhans\Desktop\test.csv','rb') as out:
+        with open(r'test.csv','rb') as out:
             csv_out=csv.writer(out)
             csv_out.writerow(['name','ip'])
             csv_out.writerow(t)
